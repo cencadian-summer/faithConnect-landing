@@ -52,15 +52,15 @@ export function ContactHero() {
 
         <div className="relative mx-auto w-full max-w-2xl">
           <div className="absolute inset-8 rounded-full bg-brand-blue/10 blur-3xl" />
-          <div className="relative overflow-hidden rounded-2xl border border-brand-blue/10 bg-white p-3 shadow-[0_28px_70px_rgb(0_14_53/0.13)] sm:p-4">
+          <div className="relative overflow-hidden rounded-2xl border border-brand-blue/10 shadow-[0_28px_70px_rgb(0_14_53/0.13)]">
             <img
-              src="/images/contact/contact-hero-support.webp"
-              alt="GraceNexa dashboard shown on a laptop with support tools for church leaders"
+              src="/images/contact/contact-hero-specialist.webp"
+              alt="GraceNexa support specialist helping a church leader by phone"
               width={1536}
               height={1024}
               loading="eager"
               decoding="async"
-              className="aspect-[3/2] w-full rounded-xl bg-brand-blue/[0.035] object-cover"
+              className="aspect-[3/2] w-full object-cover"
             />
           </div>
         </div>
