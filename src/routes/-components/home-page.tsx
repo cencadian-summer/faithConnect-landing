@@ -222,9 +222,10 @@ function ToolRow({
 
 function HeroDashboard() {
   return (
-    <div className="relative mx-auto min-h-[360px] w-full max-w-[760px] lg:min-h-[470px]">
+    <div className="relative mx-auto w-full max-w-[760px] md:min-h-[470px]">
       <div className="absolute right-0 top-2 hidden h-52 w-52 rounded-full bg-brand-blue/10 blur-3xl sm:block" />
-      <div className="relative rounded-[1.35rem] border-[8px] border-brand-dark bg-brand-dark shadow-[0_30px_70px_rgb(0_14_53/0.24)]">
+      <MobileHeroDashboard />
+      <div className="relative hidden rounded-[1.35rem] border-[8px] border-brand-dark bg-brand-dark shadow-[0_30px_70px_rgb(0_14_53/0.24)] md:block">
         <div className="overflow-hidden rounded-xl bg-white">
           <div className="grid min-h-[330px] grid-cols-[118px_1fr] sm:min-h-[410px]">
             <aside className="bg-brand-dark p-4 text-white">
@@ -413,6 +414,93 @@ function HeroDashboard() {
   )
 }
 
+function MobileHeroDashboard() {
+  return (
+    <div className="relative rounded-[1.25rem] border-[7px] border-brand-dark bg-brand-dark shadow-[0_24px_56px_rgb(0_14_53/0.22)] md:hidden">
+      <div className="overflow-hidden rounded-xl bg-white">
+        <div className="grid min-h-[390px] grid-cols-[86px_1fr]">
+          <aside className="bg-brand-dark px-3 py-4 text-white">
+            <div className="mb-6 text-[0.66rem] font-extrabold">GraceNexa</div>
+            {['Dashboard', 'Members', 'Giving', 'Events'].map((item, index) => (
+              <div
+                key={item}
+                className={`mb-2 rounded-md px-2 py-2 text-[0.58rem] font-bold ${
+                  index === 0 ? 'bg-brand-blue text-white' : 'text-white/62'
+                }`}
+              >
+                {item}
+              </div>
+            ))}
+          </aside>
+
+          <main className="min-w-0 bg-white p-4">
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <h2 className="text-base font-extrabold text-brand-dark">
+                Dashboard
+              </h2>
+              <div className="flex gap-2">
+                <span className="size-7 rounded-full bg-brand-blue/8" />
+                <span className="size-7 rounded-full bg-brand-blue/8" />
+              </div>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                ['Members', '2,450', '+6.8% this month'],
+                ['Monthly Giving', '$18,900', '+12% this month'],
+              ].map(([label, value, delta]) => (
+                <div
+                  key={label}
+                  className="rounded-lg border border-brand-blue/10 bg-white p-3 shadow-sm"
+                >
+                  <p className="text-[0.62rem] font-bold text-brand-dark/52">
+                    {label}
+                  </p>
+                  <p className="mt-1 text-lg font-extrabold text-brand-blue">
+                    {value}
+                  </p>
+                  <p className="text-[0.56rem] font-bold text-emerald-500">
+                    {delta}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-3 rounded-lg border border-brand-blue/10 p-3">
+              <div className="flex items-center justify-between gap-3">
+                <h3 className="text-xs font-extrabold text-brand-dark">
+                  Giving Overview
+                </h3>
+                <span className="text-[0.6rem] font-extrabold text-brand-blue">
+                  View all
+                </span>
+              </div>
+              <div className="mt-4 flex h-28 items-end gap-2 border-b border-l border-brand-blue/10 px-2 pb-3">
+                {[34, 48, 40, 62, 56, 74, 86].map((height, index) => (
+                  <span
+                    key={index}
+                    className="flex-1 rounded-t-sm bg-brand-blue"
+                    style={{ height: `${height}%` }}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-3 rounded-lg border border-brand-blue/10 p-3">
+              <h3 className="text-xs font-extrabold text-brand-dark">
+                Recent Announcement
+              </h3>
+              <p className="mt-2 line-clamp-2 text-[0.68rem] leading-5 text-brand-dark/62">
+                Sunday service begins at 10:00 AM.
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function MobilePhoneMockup({ className = '' }: { className?: string }) {
   return (
     <div
@@ -493,21 +581,21 @@ function WebAppMockup() {
           </span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="rounded-md border border-brand-blue/10 px-4 py-2 text-xs font-bold text-brand-dark/70">
+          <span className="hidden rounded-md border border-brand-blue/10 px-4 py-2 text-xs font-bold text-brand-dark/70 sm:inline-flex">
             Hope Community Church
           </span>
           <Bell className="size-5 text-brand-dark/50" aria-hidden="true" />
           <span className="size-8 rounded-full bg-brand-blue/20" />
         </div>
       </div>
-      <div className="mt-4 grid grid-cols-5 gap-2 rounded-lg border border-brand-blue/10 p-1 text-center text-xs font-extrabold text-brand-dark/68">
+      <div className="mt-4 grid grid-cols-3 gap-2 rounded-lg border border-brand-blue/10 p-1 text-center text-xs font-extrabold text-brand-dark/68 sm:grid-cols-5">
         {['Members', 'Donations', 'Events', 'Messages', 'Reports'].map(
           (item, index) => (
             <span
               key={item}
               className={`rounded-md px-2 py-3 ${
                 index === 0 ? 'bg-brand-blue/8 text-brand-blue' : ''
-              }`}
+              } ${index > 2 ? 'hidden sm:block' : ''}`}
             >
               {item}
             </span>
@@ -525,7 +613,7 @@ function WebAppMockup() {
           value="$24,780"
           label="This month"
         />
-        <div className="rounded-lg border border-brand-blue/10 p-5">
+        <div className="hidden rounded-lg border border-brand-blue/10 p-5 sm:block">
           <div className="mb-4 flex items-center justify-between">
             <h3 className="text-sm font-extrabold text-brand-dark">
               Upcoming Events
@@ -554,7 +642,7 @@ function WebAppMockup() {
           ))}
         </div>
       </div>
-      <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
+      <div className="mt-4 hidden gap-4 md:grid lg:grid-cols-[1.2fr_1fr]">
         <div className="rounded-lg border border-brand-blue/10 p-5">
           <div className="flex items-start gap-4">
             <IconTile icon={Megaphone} />
@@ -1166,7 +1254,7 @@ function ReportingMockup() {
         <div>
           <h3 className="text-lg font-extrabold text-brand-dark">Reports</h3>
         </div>
-        <div className="flex flex-wrap gap-2 text-xs font-extrabold text-brand-blue">
+        <div className="hidden flex-wrap gap-2 text-xs font-extrabold text-brand-blue sm:flex">
           <button className="min-h-10 rounded-md border border-brand-blue/12 px-4">
             May 1 - May 31, 2026
           </button>
@@ -1184,10 +1272,12 @@ function ReportingMockup() {
           ['Total Donations', '$24,780', Heart],
           ['Events Held', '18', CalendarDays],
           ['Active Volunteers', '312', ShieldCheck],
-        ].map(([label, value, Icon]) => (
+        ].map(([label, value, Icon], index) => (
           <div
             key={label as string}
-            className="rounded-lg border border-brand-blue/10 p-4"
+            className={`rounded-lg border border-brand-blue/10 p-4 ${
+              index > 1 ? 'hidden md:block' : ''
+            }`}
           >
             <div className="flex items-center gap-3">
               <IconTile
@@ -1207,7 +1297,7 @@ function ReportingMockup() {
           </div>
         ))}
       </div>
-      <div className="mt-4 grid gap-4 lg:grid-cols-2">
+      <div className="mt-4 hidden gap-4 md:grid lg:grid-cols-2">
         <ChartCard title="Membership Growth" value="1,248" type="line" />
         <ChartCard title="Donation Trends" value="$24,780" type="bars" />
         <div className="rounded-lg border border-brand-blue/10 p-5">
@@ -1511,7 +1601,10 @@ export function HomePage() {
           </div>
           <HeroDashboard />
         </div>
-        <div className="page-shell relative mt-32" data-home-reveal="up">
+        <div
+          className="page-shell relative mt-16 lg:mt-32"
+          data-home-reveal="up"
+        >
           <p className="text-center text-xl font-extrabold text-brand-dark">
             Trusted by churches of all sizes
           </p>
