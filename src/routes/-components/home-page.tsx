@@ -381,7 +381,7 @@ function HeroDashboard() {
                               ? 'bg-brand-blue'
                               : index === 1
                                 ? 'bg-brand-dark'
-                                : 'bg-sky-400'
+                                : 'bg-brand-blue/70'
                           }`}
                         />
                         <div>
@@ -798,7 +798,7 @@ function OrganizationMockup() {
                     index === 0
                       ? 'bg-brand-blue'
                       : index === 1
-                        ? 'bg-sky-400'
+                        ? 'bg-brand-blue/70'
                         : 'bg-brand-dark'
                   }`}
                 >
@@ -886,21 +886,22 @@ function AnnouncementsPhone() {
       text: 'Join us this Sunday as we begin our new series.',
       date: 'May 12, 2025',
       color: 'bg-brand-blue',
-      image: 'bg-[linear-gradient(135deg,#f7b267,#1f3f8f)]',
+      image: 'bg-[linear-gradient(135deg,#f7b267,var(--brand-dark))]',
     },
     {
       title: 'Volunteer appreciation night',
       text: 'Thank you to all our amazing volunteers!',
       date: 'May 8, 2025',
       color: 'bg-brand-blue',
-      image: 'bg-[linear-gradient(135deg,#fbd38d,#0f285f)]',
+      image: 'bg-[linear-gradient(135deg,#fbd38d,var(--brand-dark))]',
     },
     {
       title: 'Church picnic sign-ups are open',
       text: 'Bring your family and enjoy a day together.',
       date: 'May 5, 2025',
       color: 'bg-emerald-500',
-      image: 'bg-[linear-gradient(135deg,#7dd3fc,#f59e0b)]',
+      image:
+        'bg-[linear-gradient(135deg,color-mix(in_oklab,var(--brand-blue)_45%,var(--brand-white)),#f59e0b)]',
     },
   ]
 
@@ -933,7 +934,7 @@ function AnnouncementsPhone() {
           Grace
         </h3>
 
-        <div className="relative mt-3 overflow-hidden rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),#6432d7)] p-3 text-white shadow-[0_16px_28px_rgb(0_64_205/0.2)]">
+        <div className="relative mt-3 overflow-hidden rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),var(--brand-dark))] p-3 text-white shadow-[0_16px_28px_rgb(30_11_63/0.2)]">
           <div className="absolute right-4 bottom-2 text-6xl leading-none font-extrabold text-white/12">
             +
           </div>
@@ -1025,7 +1026,7 @@ function GivePhone() {
           </span>
         </div>
 
-        <div className="mt-3 rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),#5f3dd0)] p-3 text-white shadow-[0_16px_28px_rgb(0_64_205/0.18)]">
+        <div className="mt-3 rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),var(--brand-dark))] p-3 text-white shadow-[0_16px_28px_rgb(30_11_63/0.18)]">
           <p className="text-[0.62rem] font-bold text-white/74">
             Giving this month
           </p>
@@ -1088,7 +1089,7 @@ function GivePhone() {
           ))}
         </div>
 
-        <button className="mt-3 min-h-10 w-full rounded-md bg-brand-blue text-xs font-extrabold text-white shadow-[0_12px_22px_rgb(0_64_205/0.18)]">
+        <button className="mt-3 min-h-10 w-full rounded-md bg-brand-blue text-xs font-extrabold text-white shadow-[0_12px_22px_rgb(30_11_63/0.18)]">
           Give $100.00
         </button>
 
@@ -1149,7 +1150,7 @@ function EventsPhone() {
           </span>
         </div>
 
-        <div className="mt-3 overflow-hidden rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),#5f3dd0)] p-3 text-white">
+        <div className="mt-3 overflow-hidden rounded-lg bg-[linear-gradient(135deg,var(--brand-blue),var(--brand-dark))] p-3 text-white">
           <p className="text-[0.62rem] font-bold text-white/72">Next event</p>
           <p className="mt-2 text-base leading-tight font-extrabold">
             Sunday Worship
@@ -1338,7 +1339,7 @@ function ReportingMockup() {
             Volunteer Engagement
           </h4>
           <div className="mt-5 flex flex-wrap items-center gap-6">
-            <div className="grid size-32 place-items-center rounded-full bg-[conic-gradient(var(--brand-blue)_0_78%,rgb(0_64_205/0.16)_78%_100%)]">
+            <div className="grid size-32 place-items-center rounded-full bg-[conic-gradient(var(--brand-blue)_0_78%,rgb(109_40_217/0.16)_78%_100%)]">
               <div className="grid size-20 place-items-center rounded-full bg-white text-3xl font-extrabold text-brand-dark">
                 78%
               </div>
@@ -1565,7 +1566,7 @@ export function HomePage() {
   return (
     <main ref={motionRef} className="overflow-hidden bg-white text-brand-dark">
       <section className="relative overflow-hidden border-b border-brand-blue/10 pt-28 pb-10 lg:pt-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_4%,rgb(0_64_205/0.12),transparent_28%),radial-gradient(circle_at_8%_24%,rgb(0_64_205/0.09),transparent_26%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_4%,rgb(109_40_217/0.12),transparent_28%),radial-gradient(circle_at_8%_24%,rgb(30_11_63/0.09),transparent_26%)]" />
         <div
           className="page-shell relative grid items-center gap-12 lg:grid-cols-[0.78fr_1.22fr]"
           data-home-reveal="split"
@@ -1583,7 +1584,7 @@ export function HomePage() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact"
-                className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 text-sm font-extrabold !text-white no-underline shadow-[0_16px_28px_rgb(0_64_205/0.22)] transition-colors hover:bg-blue-700 hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/30"
+                className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 text-sm font-extrabold !text-white no-underline shadow-[0_16px_28px_rgb(30_11_63/0.22)] transition-colors hover:bg-brand-dark hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/30"
               >
                 Start Free Trial
                 <FlatIconImage

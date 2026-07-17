@@ -96,7 +96,7 @@ export function PopularResources({
           <button
             type="button"
             onClick={onClear}
-            className="mt-5 min-h-11 touch-manipulation rounded-md bg-brand-blue px-5 py-2.5 text-sm font-extrabold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
+            className="mt-5 min-h-11 touch-manipulation rounded-md bg-brand-blue px-5 py-2.5 text-sm font-extrabold text-white transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
           >
             Clear search
           </button>

@@ -10,7 +10,7 @@ export function ResourcesHero({ onQueryChange, query }: ResourcesHeroProps) {
     <header className="relative border-b border-brand-blue/8 bg-brand-blue/[0.025] pt-32 pb-14 sm:pt-36 sm:pb-18">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgb(0_64_205/0.10),transparent_34%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgb(109_40_217/0.10),transparent_34%)]"
       />
       <div className="page-shell relative text-center">
         <h1 className="text-4xl leading-tight font-extrabold text-balance text-brand-dark sm:text-5xl">

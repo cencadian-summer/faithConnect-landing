@@ -5,7 +5,7 @@ export function ContactHero() {
     <header className="relative overflow-hidden border-b border-brand-blue/8 bg-brand-blue/[0.025] pt-32 pb-16 sm:pt-36 sm:pb-20">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_12%,rgb(0_64_205/0.10),transparent_28%),radial-gradient(circle_at_88%_26%,rgb(0_64_205/0.08),transparent_26%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_12%,rgb(109_40_217/0.10),transparent_28%),radial-gradient(circle_at_88%_26%,rgb(30_11_63/0.08),transparent_26%)]"
       />
       <div
         className="page-shell relative grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]"
@@ -23,7 +23,7 @@ export function ContactHero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="mailto:sales@gracenexa.com"
-              className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 text-sm font-extrabold !text-white no-underline shadow-[0_14px_28px_rgb(0_64_205/0.20)] transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
+              className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 text-sm font-extrabold !text-white no-underline shadow-[0_14px_28px_rgb(30_11_63/0.20)] transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
             >
               Talk to sales
               <ArrowRight className="size-4" aria-hidden="true" />
