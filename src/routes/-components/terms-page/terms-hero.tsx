@@ -13,7 +13,7 @@ export function TermsHero() {
     <header className="relative border-b border-brand-blue/10 bg-brand-blue/[0.025] pt-32 pb-14 sm:pt-36 sm:pb-18">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgb(0_64_205/0.12),transparent_36%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgb(109_40_217/0.12),transparent_36%)]"
       />
       <div className="page-shell relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end">
         <div>

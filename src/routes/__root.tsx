@@ -51,7 +51,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       {
         rel: 'icon',
         type: 'image/webp',
-        href: '/images/home/GraceNexa%20Icon%20V3.webp',
+        href: '/images/home/GraceNexa%20Icon%20V5.webp',
       },
     ],
   }),

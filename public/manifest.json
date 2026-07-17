@@ -3,14 +3,14 @@
   "name": "Create TanStack App Sample",
   "icons": [
     {
-      "src": "logo192.webp",
+      "src": "/images/home/GraceNexa%20Icon%20V5.webp",
       "type": "image/webp",
-      "sizes": "192x192"
+      "sizes": "1280x1280"
     },
     {
-      "src": "logo512.webp",
+      "src": "/images/home/GraceNexa%20Icon%20V5.webp",
       "type": "image/webp",
-      "sizes": "512x512"
+      "sizes": "1280x1280"
     }
   ],
   "start_url": ".",

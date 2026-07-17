@@ -6,7 +6,7 @@ export function AboutHero() {
     <header className="relative overflow-hidden border-b border-brand-blue/8 bg-brand-blue/[0.025] pt-32 pb-16 sm:pt-36 sm:pb-20">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_16%_14%,rgb(0_64_205/0.10),transparent_30%),radial-gradient(circle_at_88%_26%,rgb(0_64_205/0.08),transparent_28%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_16%_14%,rgb(109_40_217/0.10),transparent_30%),radial-gradient(circle_at_88%_26%,rgb(30_11_63/0.08),transparent_28%)]"
       />
       <div className="page-shell relative z-10 grid items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(24rem,1.1fr)]">
         <div className="max-w-3xl">
@@ -22,7 +22,7 @@ export function AboutHero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/contact"
-              className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 py-3 text-sm font-extrabold !text-white no-underline shadow-[0_14px_28px_rgb(0_64_205/0.20)] transition-colors hover:bg-blue-700 hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
+              className="inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-md bg-brand-blue px-7 py-3 text-sm font-extrabold !text-white no-underline shadow-[0_14px_28px_rgb(30_11_63/0.20)] transition-colors hover:bg-brand-dark hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25"
             >
               Start A Church Account
               <ArrowRight aria-hidden="true" className="size-4" />

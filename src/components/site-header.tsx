@@ -55,7 +55,7 @@ export function SiteHeader() {
           className="inline-flex shrink-0 items-center gap-2 no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-lg"
         >
           <img
-            src="/images/home/GraceNexa%20Icon%20V3.webp"
+            src="/images/home/GraceNexa%20Icon%20V5.webp"
             alt="GraceNexa"
             width={40}
             height={40}
@@ -99,7 +99,7 @@ export function SiteHeader() {
           </button>
           <button
             type="button"
-            className="px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-blue-700 transition-colors"
+            className="px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-dark transition-colors"
           >
             Sign In
           </button>
@@ -153,7 +153,7 @@ export function SiteHeader() {
                 <button className="w-full px-4 py-2 text-sm font-medium text-brand-blue border border-brand-blue rounded-lg hover:bg-brand-blue hover:text-white transition-colors">
                   Book Demo
                 </button>
-                <button className="w-full px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-blue-700 transition-colors">
+                <button className="w-full px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-dark transition-colors">
                   Sign In
                 </button>
               </div>

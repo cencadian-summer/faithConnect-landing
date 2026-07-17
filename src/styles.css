@@ -7,9 +7,10 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --brand-blue: #0040cd;
+  --brand-blue: #6d28d9;
+  --brand-purple: #6d28d9;
   --brand-white: #fefefe;
-  --brand-dark: #000e35;
+  --brand-dark: #1e0b3f;
   --white: var(--brand-white);
   --gradient-top: linear-gradient(
     0deg,
@@ -178,6 +179,7 @@
 @theme inline {
   --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
   --color-brand-blue: var(--brand-blue);
+  --color-brand-purple: var(--brand-purple);
   --color-brand-white: var(--brand-white);
   --color-brand-dark: var(--brand-dark);
   --background-image-gradient-top: var(--gradient-top);

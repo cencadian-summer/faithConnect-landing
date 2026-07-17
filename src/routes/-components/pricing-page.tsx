@@ -209,7 +209,7 @@ function BillingToggle() {
       </button>
       <button
         type="button"
-        className="min-h-9 rounded-full bg-brand-blue px-3 py-2 text-center text-white shadow-sm transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/20"
+        className="min-h-9 rounded-full bg-brand-blue px-3 py-2 text-center text-white shadow-sm transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/20"
       >
         Yearly
       </button>
@@ -309,7 +309,7 @@ function PricingPlans() {
                 to="/contact"
                 className={
                   plan.featured
-                    ? 'mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-brand-blue px-5 py-3 text-sm font-extrabold !text-white no-underline shadow-sm transition-colors hover:bg-blue-700 hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25'
+                    ? 'mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-brand-blue px-5 py-3 text-sm font-extrabold !text-white no-underline shadow-sm transition-colors hover:bg-brand-dark hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25'
                     : 'mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md border border-brand-blue px-5 py-3 text-sm font-extrabold text-brand-blue no-underline transition-colors hover:bg-brand-blue hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/25'
                 }
               >
